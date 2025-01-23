@@ -1,1 +1,1 @@
-# MGDGC
+# MIND_EEG
