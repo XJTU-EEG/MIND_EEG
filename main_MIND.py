@@ -230,7 +230,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
 
     parser.add_argument("--device", type=str, default="cuda:3", help="gpu device")
-    parser.add_argument("--log_dir", type=str, default="/date1/yss/xcx/logs", help="log file dir") # /date1/yss/xcx/logs  /data/xcx/logs
+    parser.add_argument("--log_dir", type=str, default="/your_log_dir", help="log file dir") 
     parser.add_argument('--out_feature', type=int, default=20, help='Output feature for GCN.')
     parser.add_argument('--seed', type=int, default=42, help='Random seed.')
     parser.add_argument('--weight_decay', type=float, default=5e-4, help='Weight decay.')
@@ -250,7 +250,7 @@ def parse_args():
         parser.add_argument("--in_feature", type=int, default=5, help="")
         parser.add_argument("--n_class", type=int, default=4, help="")
         parser.add_argument("--epsilon", type=float, default=0.01, help="")
-        parser.add_argument("--datapath", type=str, default="/date1/yss/xcx/seed4-2/", help="")
+        parser.add_argument("--datapath", type=str, default="/your_datapath/", help="")
     elif args.dataset == 'SEED5':
         pass
     elif args.dataset == 'MPED':
